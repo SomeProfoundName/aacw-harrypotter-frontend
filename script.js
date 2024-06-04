@@ -1,56 +1,57 @@
-const main = document.getElementById('main');
-const character = document.querySelector('.character');
-const searchInput = document.getElementById('search');
+const main = document.getElementById("main");
+const character = document.querySelector(".character");
+const searchInput = document.getElementById("search");
 
-let characterArray = []
+let characterArray = [];
 
 searchInput.addEventListener("input", (e) => {
-    const value = e.target.value.toLowerCase();
-    console.log(value)
-    characterArray.forEach((character) => {
-        const isVisible = character.name.toLowerCase().includes(value);
-        character.element.classList.toggle("hide", !isVisible)
-    })
-})
+  const value = e.target.value.toLowerCase();
+  console.log(value);
+  characterArray.forEach((character) => {
+    const isVisible = character.name.toLowerCase().includes(value);
+    character.element.classList.toggle("hide", !isVisible);
+  });
+});
 
-getCharacters()
+getCharacters();
 
 function getCharacters() {
-    fetch("https://aacw-harrypotter-backend-api.onrender.com/characters").then(res=>res.json())
-    .then(data=>{
-        console.log(data)
-        showCharacters(data)
-    })
+  fetch("https://aacw-harrypotter-backend-api.onrender.com/characters")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      showCharacters(data);
+    });
 }
 
 function showCharacters(data) {
-    main.innerHTML='';
+  main.innerHTML = "";
 
-    characterArray = data.map(character => {
-        const {name, image} = character
-        const characterEl =document.createElement('div')
-        characterEl.classList.add('character')
-        characterEl.classList.add('front')
+  characterArray = data.map((character) => {
+    const { name, image } = character;
+    const characterEl = document.createElement("div");
+    characterEl.classList.add("character");
 
-        characterEl.innerHTML=`
-        <img src="${image}" alt="an image of ${name}" onerror="handleError(this)"/>
-        <div class="character-info">
-        <h3>${name}</h3>
+    characterEl.innerHTML = `
+        <div class="character-inner">
+            <div class="front">
+                <img src="${image}" alt="a picture of a ${name}">
+                <div class="character-info">
+                    <h3>${name}</h3>
+                </div>
+                </div>
+                <div class="back">
+                <h3>Back of the card</h3>
+                </div>
+            </div>
         </div>
-        `
+        `;
 
-        const characterBack =document.createElement('div')
-        characterBack.classList.add('character')
-        characterBack.classList.add('back')
-        characterBack.innerHTML= `
-        <h1>Back of the Card</h3>
-        `
-        main.appendChild(characterEl)
-        main.appendChild(characterBack)
-        return {name:character.name, element:characterEl}
-    });
-} 
+    main.appendChild(characterEl);
+    return { name: character.name, element: characterEl };
+  });
+}
 
 function handleError(imgElement) {
-    imgElement.src="images/wizard-icon.jpeg"
+  imgElement.src = "images/wizard-icon.jpeg";
 }
