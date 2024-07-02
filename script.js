@@ -1,3 +1,4 @@
+
 const main = document.getElementById("main");
 const character = document.querySelector(".character");
 const searchInput = document.getElementById("search");

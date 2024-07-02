@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter App</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -16,20 +15,24 @@
         </div>
     </header>
 
-    <main id="main">
+    <section>
+        <div class="landing">
+        
+            <p>
+                Harry Potter World connects to an API to show information about the fictional characters found in the within the Harry Potter Universe. <br>
 
-        <div class="character">
-            <div class="character-inner">
-                <div class="front">
-                    <img src="images/wizard-icon.jpeg" alt="a picture of a wizard">
-                    <div class="character-info">
-                        <h3>Character Name</h3>
-                    </div>
-                </div>
+                This page was made using React. <br>
                 
-            </div>
+                This projects front-end and back-end code can be found at my GitHub Page
+                
+            </p>
         </div>
-
+    </section>
+        <div class="image-background">
+            <img src="images/map-back.webp" alt="">
+        </div>
+    <main id="main">
+        
         <div class="character">
             <div class="character-inner">
                 <div class="front">
@@ -59,5 +62,16 @@
 
     </main>
 
+
+    <script src="script.js"></script>
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" defer>
+	    VanillaTilt.init(document.querySelector(".character"), {
+		max: 25,
+		speed: 400
+	});
+    </script> -->
+    
+    
 </body>
 </html>
