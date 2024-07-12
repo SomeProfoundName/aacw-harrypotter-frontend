@@ -2,14 +2,14 @@
 
 ## Overview
 
-This repository contains code for a website that connects to my [harry potter backend api](https://github.com/SomeProfoundName/aacw-harrypotter-backend-api). Then uses the JSON data to create cards on the webpage.
+This repository contains code for a website that connects to my [Harry Potter Back-end API](https://github.com/SomeProfoundName/aacw-harrypotter-backend-api). Then uses the JSON data to create cards on the webpage.
 
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- [Vanilla Tilt]([vanilla tilt](https://micku7zu.github.io/vanilla-tilt.js/))
+- [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/)
 
 ## Installation
 
