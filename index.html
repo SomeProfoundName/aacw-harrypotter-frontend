@@ -1,67 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harry Potter App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h3 class="harry-title">Harry Potter World</h3>
-        <div class="search-box">    
-            <input type="text" name="" id="search" placeholder="Search" class="search">
-        </div>
+      <h3 class="harry-title">Harry Potter World</h3>
+      <div class="search-box">
+        <input
+          type="text"
+          name=""
+          id="search"
+          placeholder="Search"
+          class="search"
+        />
+      </div>
     </header>
 
     <section>
-        <div class="landing">
-        
-            <p>
-                Harry Potter World connects to an API to show information about the fictional characters found in the within the Harry Potter Universe. <br>
+      <div class="landing">
+        <p>
+          Harry Potter World connects to an API to show information about the
+          fictional characters found in the within the Harry Potter Universe.
+          <br />
 
-                This page was made using React. <br>
-                
-                This projects front-end and back-end code can be found at my GitHub Page
-                
-            </p>
-        </div>
+          This projects front-end and back-end code can be found at my GitHub
+          Page
+        </p>
+      </div>
     </section>
-        <div class="image-background">
-            <img src="images/map-back.webp" alt="">
-        </div>
-    <main id="main">
-        
+    <section class="char-container">
+      <div class="image-background">
+        <img src="images/map-back.webp" alt="" />
+      </div>
+      <main id="main">
         <div class="character">
-            <div class="character-inner">
-                <div class="front">
-                    <img src="images/wizard-icon.jpeg" alt="a picture of a wizard">
-                    <div class="character-info">
-                        <h3>Character Name</h3>
-                    </div>
-                </div>
-                <div class="back">
-                    <h3>Back of the card</h3>
-                </div>
+          <div class="character-inner">
+            <div class="front">
+              <img src="images/wizard-icon.jpeg" alt="a picture of a wizard" />
+              <div class="character-info">
+                <h3>Character Name</h3>
+              </div>
             </div>
+            <div class="back">
+              <h2>Harry Potter</h2>
+              <h3>Alt Names:</h3>
+              <p>alt names</p>
+              <h3>Species:</h3>
+              <p>species</p>
+              <h3>Gender:</h3>
+              <p>gender</p>
+              <h3>House:</h3>
+              <p>house</p>
+              <h3>Date of Birth:</h3>
+              <p>dob</p>
+
+              <span id="learn"><a href="">Learn More ></a></span>
+
+            </div>
+          </div>
         </div>
+        <!-- new card -->
         <div class="character">
-            <div class="character-inner">
-                <div class="front">
-                    <img src="images/wizard-icon.jpeg" alt="a picture of a wizard">
-                    <div class="character-info">
-                        <h3>Character Name</h3>
-                    </div>
-                </div>
-                <div class="back">
-                    <h3>Back of the card</h3>
-                </div>
+          <div class="character-inner">
+            <div class="front">
+              <img src="images/wizard-icon.jpeg" alt="a picture of a wizard" />
+              <div class="character-info">
+                <h3>Character Name</h3>
+              </div>
             </div>
+            <div class="back">
+              <h3>Back of the card</h3>
+            </div>
+          </div>
         </div>
-
-    </main>
-
+      </main>
+    </section>
 
     <script src="script.js"></script>
     <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
@@ -71,7 +88,5 @@
 		speed: 400
 	});
     </script> -->
-    
-    
-</body>
+  </body>
 </html>

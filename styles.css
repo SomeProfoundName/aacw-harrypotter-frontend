@@ -6,7 +6,7 @@
     margin: 0;
 }
 body{
-    background-color: #372E29;
+    background-color: rgb(55, 46, 41);
     font-family: "Ibarra Real Nova", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -21,7 +21,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(114,98,85);
+    background: #726255;
     background: linear-gradient(0deg, rgba(114,98,85,1) 0%, rgba(55,46,41,1) 100%);
     color: #ecb939;
     position: relative;
@@ -36,7 +36,7 @@ header{
 }
 .search {
     background-color: transparent;
-    border: 2px solid;
+    border: 2px solid rgba(55, 46, 41, .2);
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 1rem;
@@ -52,30 +52,40 @@ header{
 /* landing */
 
 .landing {
-  padding: 30px 0px;
-  height: 250px;
+  padding: 50px 30px;
   width: 100%;
   text-align: center;
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,18,41,1) 15%, rgba(116,170,198,1) 50%, rgba(1,18,41,1) 85%, rgba(0,0,0,1) 100%);
-
+  background: #726255;
+  background: radial-gradient(circle, rgba(75,116,159,1) 0%, rgba(8,32,62,1) 100%);
 }
 
 .landing p {
-  margin-top: 30px;
   line-height: 3rem;
   font-size: 18px;
+  color: white;
+  text-shadow: #1E1E1E;
 }
 
 /* CARDS  AREA*/
+
+.char-container {
+  width: 100%;
+  height: auto;
+}
+
+
 .image-background {
   position: absolute;
   width: 100%;
+  height: 100%;
 }
 
 .image-background img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 
 main{
     display: flex;
@@ -83,7 +93,7 @@ main{
     justify-content: center;
     position: relative;
     background-color: transparent;
-    margin-top: 90px;
+    padding-top: 30px;
     gap: 30px;
 }
 
@@ -140,8 +150,23 @@ main{
   text-align: left;
 }
 
-.back h3 {
+.back h2 {
   margin: 20px 0px 0px 20px;
+}
+
+.back h3 {
+  margin: 20px 10px 0px 10px;
+}
+
+.back p {
+  margin-left: 10px;
+}
+
+#learn {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
 }
 
 .character-info {
